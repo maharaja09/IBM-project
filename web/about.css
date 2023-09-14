@@ -1,0 +1,29 @@
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0)), url("image/banner24.jpg");
+    padding: 15%;
+    background-size: cover;
+}
+.banner .text-center{
+    text-align: center;
+}
+
+/* 
+.facilities{
+    padding: 50px;
+}
+
+.facilities li {
+    list-style-type:disc;
+}
+
+.facilities a {
+    text-decoration: none;
+}
+
+.facilities h3{
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #0d1137;
+} */

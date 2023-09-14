@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+    <div class="header-content">
+        <div class="logo">
+            <img src="./image/logo.jpg" alt="logo">
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html" target="_blank">Home</a></li>
+            <li><a href="Courses.html" target="_blank">Courses</a></li>
+            <li><a href="campus.html" target="_blank">Campus Life</a></li>
+            <li><a href="admin.html" target="_blank">Admission</a></li>
+        </ul>
+    </div>
+    <h1>student registration form</h1>
+    <form action="" class="form">
+        <div class="input-box">
+            <label>First Name</label>
+            <input type="text" placeholder="enter your first name" name="first_name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Last Name</label>
+            <input type="text" placeholder="enter your last name" name="last_name" required>
+        </div>
+
+        <div class="input-box">
+            <label>Date of brith</label>
+            <input type="date" placeholder="enter your date of brith" name="dob" required>
+        </div>
+
+        <div class="genter-box">
+            <h3>Genter</h3>
+            <div class="genter-option">
+                <div class="genter">
+                    <input type="radio" id="check-male" name="genter" checked>
+                    <label for="check-male">Male</label>
+                </div>
+                <div class="genter">
+                    <input type="radio" id="check-female" name="genter" checked>
+                    <label for="check-female">Female</label>
+                </div>
+                <div class="genter">
+                    <input type="radio" id="check-others" name="genter" checked>
+                    <label for="check-others">Others</label>
+                </div>
+            </div>
+        </div>
+
+        <div class="column">
+            <div class="input-box">
+                <label>Phone number</label>
+                <input type="text" placeholder="enter your phone number" name="phone number" size="10" required>
+            </div>
+
+            <div class="input-box">
+                <label>Email-id</label>
+                <input type="text" placeholder="enter your mail-id" name="email" required>
+            </div>
+
+        </div>
+
+        <div class="Courses">
+            <label><b>Course</b></label>
+            <select>
+                <option value="Course">Course</option>
+                <option value="CS">Computer Science And Engineering</option>
+                <option value="IT">Information Technology</option>
+                <option value="AI">Arificial Intelligence</option>
+                <option value="CIVIL">Civil Engineering</option>
+                <option value="MECH">Mechanical</option>
+                <option value="BIO">Biotechnology</option>
+                <option value="ECE">Electrical And Electronic Engineering</option>
+            </select>
+        </div>
+
+        <div class="input-box address">
+            <label>Address</label>
+            <input type="text" placeholder="enter your street address" name="Address" required>
+            <input type="text" placeholder="enter your village name" name="village name" required>
+            <div class="column">
+                <input type="text" placeholder="enter your street city" name="city" required>
+                <input type="text" placeholder="enter your street district" name="district" required>
+                <input type="text" placeholder="enter your street state" name="state" required>
+                <input type="text" placeholder="enter your pin-code" name="pin-code" required>
+            </div>
+        </div>
+        <button>Submit</button>
+    </form>
+
+    <div class="footer">
+        <div class="about">
+            <h3>About</h3>
+            <p>Education university is a leading institution dedicated to academic excellence and innovation.</p>
+        </div>
+        <div class="quicklink">
+            <h3>quicklink</h3>
+            <ul style="text-align: left;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Courses.html">Courses</a></li>
+                <li><a href="campus.html">Campus Life</a></li>
+                <li><a href="admin.html">Admission</a></li>
+            </ul>
+        </div>
+        <div class="location">
+            <h3>location</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15713.929565646873!2d76.3601451!3d10.0595022!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080c0125cc6917%3A0x28886a02293b0233!2sNUALS%20(National%20University%20of%20Advanced%20Legal%20Studies)!5e0!3m2!1sen!2sin!4v1694063087337!5m2!1sen!2sin"
+                width="400" height="auto" style="border:0; width: 100%;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <div class="bottom">
+        <div class="Contact-us">
+            <h4 style="text-align: center; text-transform: capitalize">Contact-us</h4>
+            <ul style="text-align: center; margin-top: 1rem">
+                <li class="tele">+1 (555) 123-4567</li>
+                <li class="mail">info@universitycollege.edu</li>
+                <li class="address">R32, NAD Rd, Kalamassery, Kochi, Kerala 683503</li>
+                <li class="Phone">048425068476</li>
+            </ul>
+        </div>
+        <div class="socialmedia">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-linkedin"></i>
+        </div>
+    </div>
+</body>
+
+</html>
