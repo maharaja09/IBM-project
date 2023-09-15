@@ -18,11 +18,10 @@ a {
 
 header {
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.285)), url("image/back.jpg");
+    background: linear-gradient(rgba(0, 0, 0, 0.252), rgba(0, 0, 0, 0.285)), url("image/banner24.jpg");
     background-attachment: fixed;
     width: 100%;
     background-size: cover;
-    position: relative;
 }
 
 .header-content {
@@ -116,6 +115,7 @@ header {
 .wwa-box {
     padding: 20px;
     margin-left: 10px;
+    margin-right: 10px;
 }
 
 .wwa-box:hover {
@@ -159,10 +159,11 @@ header {
     flex-direction: column;
     text-transform: capitalize;
     align-items: center;
-    gap: 2rem;
+    gap: 1rem;
+    margin-left: 1rem;
 }
 .about p{
-    text-justify: center;
+    text-align: justify;
 }
 
 .location{
@@ -216,8 +217,8 @@ header {
 
 @media only screen and (max-width: 850px) {
     .nav-links {
-        position: absolute;
-        flex-direction: column;
+        display: flex;
+        flex-direction: row;
         right: 0;
         gap: 0;
         top: 12vh;
@@ -231,5 +232,17 @@ header {
 
     .nav-links {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 373px) {
+    .wwa-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer{
+        display: flex;
+        flex-direction: column;
     }
 }
