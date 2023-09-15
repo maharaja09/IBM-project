@@ -1,0 +1,46 @@
+.banner{
+    background: linear-gradient(rgba(0, 0, 0, 0.722), rgba(0, 0, 0, 0)), url("image/back.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-attachment: fixed;
+}
+
+.banner h3{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
+
+/* .facilities {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    /* width: 100%; */
+    /* justify-items: center;
+} */
+
+/* .facilities a {
+    color: black;
+    font-size: 1.3rem;
+    margin: 10px;
+}
+
+.facilities a:hover {
+    background-color: rgba(12, 0, 250, 0.095);
+    box-shadow: 4px 3px 5px 4px rgba(3, 32, 251, 0.601);
+} */ 
+
+.contact{
+    border: 1px;
+    box-shadow: 4px 3px 5px 4px rgba(3, 32, 251, 0.23);
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    line-height: 2rem;
+}
