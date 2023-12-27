@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    padding: 15px;
+    margin: 10px;
+    text-align: end;
+}
+
+a {
+    text-decoration: none;
+    text-align: left;
+    color: #007bff;
+}
+
+a:hover {
+    color: red;
+}
+
+.heading{
+    color: #086e9a;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+form {
+    max-width: 50%;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 2rem;
+}
+
+label {
+    display: inline-block;
+    width: 33%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: start;
+}
+
+
+input[type="text"],
+input[type="mail"],
+input[type="tel"],
+input[type="number"],
+input[type="date"],
+select{
+    width: 50%;
+    box-sizing: border-box;
+    padding: 10px;
+    /* margin: 5px 0; */
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

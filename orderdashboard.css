@@ -1,0 +1,166 @@
+/* Reset some default styles */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    line-height: 1.6;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+}
+
+/* Header styles */
+.header {
+    color: #fff;
+    /* padding: 10px; */
+    display: grid;
+    grid-template-columns: 1fr 28fr;
+    justify-items: start;
+    background-color: #ede9e9;
+    border: 6px solid white;
+    border-bottom: 2px solid rgb(100, 99, 99);
+    box-shadow: 0 12px 16px 0 rgba(117, 116, 116, 0.24);
+
+}
+
+.nav-bar img {
+    margin-top: 4px;
+    max-width: 50px;
+    margin-left: 7px;
+    margin-right: 7px;
+    height: 68px;
+}
+
+.task-bar {
+    margin-top: 3px;
+    margin-bottom: 0.5rem;
+    margin-right: 3px;
+    width: 100%;
+    border: 1px solid;
+    text-transform: uppercase;
+    word-spacing: 1px;
+
+}
+
+.task-bar h3 {
+    max-width: 100%;
+    background-color: rgb(0, 0, 0);
+    color: #E1AD01;
+    padding: 2px;
+    font-size: 14px;
+}
+
+.task-bar h2 {
+    max-width: 100%;
+    background-color: #3B444B;
+    color: rgb(255, 255, 255);
+    padding: 1px;
+}
+
+/* Container styles */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    margin: 10px;
+    justify-items: center;
+    /* border: 6px solid white; */
+    /* height: 100%; */
+    box-shadow: 0 12px 16px 0 rgba(117, 116, 116, 0.24);
+    /* background-color: #ede9e9; */
+}
+
+.left-container,
+.right-container {
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 12px 16px 0 rgba(117, 116, 116, 0.24);
+    border: 2px solid rgb(60, 60, 60);
+    border-bottom: none;
+}
+
+.left-container .heading {
+    margin-top: 1rem;
+    text-align: center;
+    color: #32a852;
+    font-size: 1.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.left-side-btn {
+    color: #fff;
+    font-family: sans-serif;
+    cursor: pointer;
+    /* margin-left: 1rem; */
+    width: 80%;
+    border: 6px solid white;
+    border-radius: 16px;
+    line-height: 20px;
+    padding: 27px 0px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+
+}
+
+
+/* Table styles */
+.table {
+    width: 99%;
+    border-collapse: collapse;
+    /* margin-top: 20px; */
+    margin-left: 6px;
+    box-shadow: 0 12px 16px 0 rgba(117, 116, 116, 0.24);
+    border: 1.5px solid rgb(60, 60, 60);
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    text-align: center;
+
+}
+
+.table th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+/* Edit product and supplier styles */
+.edit-product,
+.supplier-edit {
+    margin-top: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+input[type="submit" i]
+{
+    background: none;
+    border: none;
+    color:rgb(0, 0, 0);
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-container,
+    .right-container {
+        width: 100%;
+    }
+}

@@ -1,0 +1,44 @@
+<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"])?>" method="POST">
+        <label for="product_id">Select Product:</label>
+        <select name="product_id" id="product_id" required onchange="this.form.submit()">
+            <option value= "<?= 'ID'.$selectedproductid ?>">Select a Product</option>
+            <?php
+            require_once 'config.php';
+            include 'config.php';
+            $query = "SELECT productid, productname, product_total_qty, productprice FROM master_table";
+            $result = mysqli_query($con, $query);
+            while ($row = mysqli_fetch_assoc($result)) {
+                $selected = ($selectedProductId == $row['productid']) ? 'selected' : '';
+                echo "<option value=" . $row['productid'] ." $selected>" . $row['productid'] . " </option>";
+            }
+            ?>
+        </select><br><br>
+        <label for="order_qty">Quantity to Purchase</label>
+        <input type="number" name="order_qty" id="order_qty" value='<?= $selectedorderqty;?>' required min="1" onchange="this.form.submit()"><br><br>
+
+        <label for='product_name'>Product Name</label>
+        <input type='text' name='product_name' value='<?= $productname;?>' readonly><br><br>
+
+        <label for='product_price'>Unit price</label>
+        <input type='text' name='product_price' value='<?= $unitprice;?>' readonly><br><br>
+
+        <label for='order_price'>Total Price</label>
+        <input type='text' name='order_price' value='<?= $totalprice;?>' readonly><br><br>
+
+        <label for="notes">Product Description</label>
+        <input type="text" name="notes"><br><br>
+
+        <label for='seller_name'>Seller Name</label>
+        <input type='text' name='seller_name' value='<?= $sellername;?>' readonly><br><br>
+
+        <label for="seller_phno" id="seller_phno"> Seller Phone Number </label>
+        <input type="number" name="seller_phno" value=""><br><br>
+
+        <label for="seller_mailid" id="seller_mailid"> Seller Mail </label>
+        <input type="mail" name="seller_mailid" value=""><br><br>
+        
+        <label for="seller_address" id="seller_address"> Seller Address </label>
+        <textarea name="seller_address" rows="5" cols="30"></textarea><br><br>
+
+        <button type="submit" name="vendor" value="Submit"> Place Order </button><br><br>
+    </form>

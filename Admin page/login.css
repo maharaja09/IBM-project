@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: #eee;
+}
+
+.message {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 10px;
+    background-color: #eee;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.btn,
+.delete-btn,
+.option-btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover {
+    background-color: black;
+}
+
+.btn {
+    background-color: blue;
+    margin-top: 10px;
+}
+
+.delete-btn {
+    background-color: red;
+}
+
+.option-btn {
+    background-color: orange;
+}
+
+.form-container {
+    width: 945px;
+    margin-top: 10%;
+    margin-right: 0px;
+    margin-left: auto;
+}
+
+.form-container form {
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+
+.form-container form h3 {
+    font-size: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.form-container form .box {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.form-container form p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.form-container form p a {
+    color: red;
+    text-decoration: none;
+}
+
+.form-container form p a:hover {
+    text-decoration: underline;
+}
+
