@@ -1,0 +1,124 @@
+/* Common Style  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+/* Style body section */
+body {
+    background-color: #eee;
+}
+/* display msessage style */
+.message {
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 15px 10px;
+    background-color: #eee;
+    text-align: center;
+    z-index: 1000;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+    color: black;
+    font-size: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+/* Style for login and register button  */
+.btn {
+    display: inline-block;
+    padding: 10px 30px;
+    cursor: pointer;
+    font-size: 18px;
+    color: white;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+/* style for hover */
+.btn:hover {
+    background-color: black;
+}
+/* Set background color for login and register button */
+.btn {
+    background-color: blue;
+    margin-top: 10px;
+}
+/* Style for form container */
+.form-container {
+    width: 945px;
+    margin-top: 1%;
+    margin-right: 0px;
+    margin-left: auto;
+}
+.register-container {
+    width: 940px;
+    margin-top: 1rem;
+    margin-right: 0px;
+    margin-left: auto;
+    margin-bottom: 2rem;
+}
+h2{
+    text-align: center;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    color: #007bff;
+}
+/* Style for form */
+.form-container form {
+    width: 500px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+}
+.register-container form {
+    /* float: left; */
+    width: 50%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    margin-left: 2rem;
+}
+
+.form-container form h3,
+.register-container form h3 {
+    font-size: 30px;
+    margin: 10px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.form-container form .box,
+.register-container form .box {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 12px 14px;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.form-container form p,
+.register-container form p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: black;
+}
+
+.form-container form p a,
+.register-container form p a {
+    color: red;
+    text-decoration: none;
+}
+
+.form-container form p a:hover,
+.register-container form p a:hover{
+    text-decoration: underline;
+}
+

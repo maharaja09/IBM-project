@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form action="register.php" method="post" enctype="multipart/form-data">
+        <input type="text" name="first_name" placeholder="enter your first name" class="box" required><br><br>
+        <input type="text" name="last_name" placeholder="enter your first name" class="box" required><br><br>
+        <input type="text" name="admin_address" placeholder="enter your address" class="box" required><br><br>
+        <input type="text" name="email" placeholder="enter your email" class="box" required><br><br>
+        <input type="text" name="admin_phno" placeholder="enter your number" class="box" required><br><br>
+        <input type="password" name="password" placeholder="enter password" class="box" required><br><br>
+        <input type="password" name="confirm_password" class="box" required><br><br>
+        <input type="submit" name="submit" class="btn" value="register now"><br><br>
+        <p>already have an account? <a href="admin_login.php">login now</a></p>
+    </form>
+</body>
+</html>
